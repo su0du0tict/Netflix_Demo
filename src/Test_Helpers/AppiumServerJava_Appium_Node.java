@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
-public class AppiumServerJava {
+public class AppiumServerJava_Appium_Node {
 	
 	private AppiumDriverLocalService service;
 	private AppiumServiceBuilder builder;
@@ -53,7 +53,7 @@ public class AppiumServerJava {
 	
 	
 	public static void main(String[] args) {
-		AppiumServerJava appiumServer = new AppiumServerJava();
+		AppiumServerJava_Appium_Node appiumServer = new AppiumServerJava_Appium_Node();
 		
 		int port = 4723;
 		if(!appiumServer.checkIfServerIsRunnning(port)) {

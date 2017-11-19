@@ -29,7 +29,7 @@ static ExtentTest childtest;
 public void setUp() throws Exception
 {
 		boolean status=true;
-		driver=Browser_Factory.launch_WEB_URL("https://www.netflix.com");
+		driver=Browser_Factory.launch_WEB_URL("https://www.netflix.com","Chrome");
 		extent=ExtentManager.GetExtent();
 		test=ExtentManager.createTest("Test", "Test");
 		childtest=test.createNode("Test");
