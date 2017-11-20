@@ -9,6 +9,7 @@ import com.aventstack.extentreports.*;
 
 import Test_Helpers.Anrdroid_Factory;
 import Test_Helpers.AppiumServerJava_Appium_Node;
+import Test_Helpers.AppiumServerJava_CMD;
 import Test_Helpers.Browser_Factory;
 import Test_Helpers.ExtentManager;
 
@@ -23,7 +24,7 @@ static WebDriver mobile_driver;
 static ExtentReports extent;
 static ExtentTest test;
 static ExtentTest childtest;
-static AppiumServerJava_Appium_Node appiumServer;
+static AppiumServerJava_CMD appiumServer;
 
 
 @BeforeTest
@@ -37,7 +38,7 @@ public void setUp() throws Exception
 		ExtentManager.Report_Status(childtest, status, "Test", driver);
 		
 		
-		appiumServer = new AppiumServerJava_Appium_Node();
+		appiumServer = new AppiumServerJava_CMD();
 		appiumServer.startServer();System.out.println("Appium Server Started");
 		
 		String deviceName="07160795b61b1a04";
