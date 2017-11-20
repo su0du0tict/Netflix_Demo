@@ -22,7 +22,7 @@
         <version>2.20.1</version>
         <configuration>
           <suiteXmlFiles>            
-            <suiteXmlFile>Web.xml</suiteXmlFile>	
+            <suiteXmlFile>android.xml</suiteXmlFile>	
           </suiteXmlFiles>
         </configuration>
       </plugin>
